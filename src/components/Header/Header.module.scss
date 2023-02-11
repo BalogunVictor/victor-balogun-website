@@ -1,4 +1,4 @@
-@import '../Abstract/mixin.scss';
+@import '../../styles/mixin';
 
 
 .header{
@@ -7,7 +7,7 @@
   margin: 10px;
   background-color: white;
 
-  @include respond (mobile) {
+  @include respond(mobile){
     margin: 0;
   }
   
@@ -18,7 +18,7 @@
     justify-content: space-between;
     padding: 0 200px;
 
-    @include respond (mobile){
+    @include respond(mobile){
       padding: 0 20px;
     }
 
@@ -28,11 +28,11 @@
       color: black;
       font-weight: 500;
 
-      @include respond (small-lap) {
+      @include respond(small-lap) {
         font-size: 25px;
       }
 
-      @include respond (mobile){
+      @include respond(mobile){
         font-size: 25px;
         z-index: 999;
       }
@@ -41,7 +41,7 @@
     .nav{
       display: flex;
 
-      @include respond (mobile) {
+       @include respond(mobile){
         display: flex;
         }
 
@@ -49,7 +49,7 @@
           display:none;
           font-size: 40px;
 
-          @include respond (mobile){
+          @include respond(mobile) {
             display: block;
             left: 40px;
             z-index: 9999;
@@ -59,8 +59,11 @@
           .links{
             display: flex;
             gap: 25px;
+           
 
-            @include respond (mobile) {
+            
+
+            @include respond(mobile){
               display: flex;
               flex-direction: column;
               width: 100%;
@@ -74,24 +77,42 @@
               opacity: 10;
               transition: all 0.5s ease;
               line-height: 50px; 
-              background-color: white;
+              background-color: #f2f2f2;
               gap: 50px;
               padding-top: 40px;
             }
 
             .link{
+              display: inline-block;
+              position: relative;
               text-decoration: none;
               font-size: 20px;
               color: black;
               font-weight: 500;
               cursor: pointer;
 
-              @include respond (mobile){
+              &::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 2px;
+                background-color: black;
+                border-radius: 4px;
+                scale: 0.1;
+                transform-origin: right ;
+                transition: scale 0.25s;
+              }
+  
+              &:hover::before{
+                scale: 1;
+                transform-origin: left;
+              }
+
+              @include respond(mobile){
                 font-size: 50px;
                 padding-top: 40px;
-                &:hover{
-                  border-bottom: 5px solid black;
-                }
               }
             }
           }
@@ -110,6 +131,8 @@
   }
     }
 
+
+
   .headerHr{
     height: 2px;
     margin: 0 150px;
@@ -117,7 +140,7 @@
     justify-content: space-around;
     border: none;
 
-    @include respond (mobile){
+    @include respond(mobile){
       display: none;
     }
   }

@@ -1,28 +1,28 @@
 // MEDIA QUERY MANAGER
 /*
-0 - 600px:      Phone
-600 - 900px:    Tablet portrait
+0 - 480px:      Phone
+480 - 900px:    Tablet portrait
 900 - 1200px:   Tablet landscape
 [1200 - 1800] is where our normal styles apply
 
 
 $breakpoint arguement choices:
-- phone
-- tab-port
-- tab-land
+- mobile
+- tabllt
+- small-lap
 - big-desktop
 
 1em = 16px
 */
 @mixin respond($breakpoint) {
   @if $breakpoint == mobile {
-      @media only screen and (max-width: 480px) { @content };    //600px
+      @media only screen and (max-width: 480px) { @content };    //480px
   }
   @if $breakpoint == tablet {
-      @media only screen and (max-width: 1095px) { @content };     //900px
+      @media only screen and (max-width: 900px) { @content };     //900px
   }
   @if $breakpoint == small-lap {
-      @media only screen and (max-width: 1400px) { @content };    //1200px
+      @media only screen and (max-width: 1100px) { @content };    //1100px
   }
   @if $breakpoint == big-desktop {
     @media only screen and (min-width: 112.5em) { @content };    //1800

@@ -1,0 +1,81 @@
+@import '../../styles/mixin';
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 0;
+  z-index: 999999;
+  
+
+
+  @include respond (mobile){
+    display: inline;
+  }
+
+  .footerWrapper{
+  margin-right: 50px;
+
+  @include respond (small-lap){
+    margin-right: 80px;
+  }
+
+
+    .icons{
+      margin-bottom: 20px;
+
+      @include respond (mobile){
+        float: right;
+        position: relative;
+        text-align: left;
+      }
+      
+      ul{
+        list-style: none;
+
+        @include respond (mobile){
+          position: relative;
+          left: 50%;
+          margin-right: 70px;
+        }
+
+        li{
+          list-style: none;
+
+          
+          @include respond (mobile){
+            float: left;
+            position: relative;
+            padding: 0 15px;
+          }
+        }
+      }
+
+      a{
+        text-decoration: none;
+        cursor: pointer;
+
+      .icon{
+        border: 2px solid black;
+        font-size: 40px;
+        border-radius: 50%;
+        color: black;
+        box-shadow: -1px 0px 4px 4px black;
+        padding: 2px 2px;
+        margin-bottom: 10px;
+      }
+    } 
+  }
+    .vl{
+      border-right: 5px solid black;
+      height: 100px;
+      margin-right: 12px;
+
+      @include respond (mobile){
+        display: none;
+      }
+    } 
+  }
+}

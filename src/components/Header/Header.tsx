@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import {RiMenu4Line} from 'react-icons/ri';
 import {GrClose} from 'react-icons/gr'
-import './Header.scss'
+import style  from './Header.module.scss';
 
 export const Header = () => {
   const [clicked, setClicked] = useState(false);
@@ -12,27 +12,27 @@ export const Header = () => {
   };
 
   return (
-    <div className="header">
-      <div className="headerWrapper">
+    <div className={style.header}>
+      <div className={style.headerWrapper}>
 
-        <Link  href="/" className="logo">  {'<victor.Balogun/>'} </Link>
+        <Link  href="/" className={style.logo}>  {'<victor.Balogun/>'} </Link>
 
-        <div className={clicked ? "nav active" : "nav"}>
+      <div className={clicked ? style.nav + " " + style.active : style.nav }>
 
-          <div className="menuIcon" onClick={handleClicked}>
-            <div className="menuIconWrapper">
-            {clicked ? <GrClose  className='close'/> : <RiMenu4Line className='open' />}
+          <div className={style.menuIcon} onClick={handleClicked}>
+          <div className={style.menuIconWrapper}>
+            {clicked ? <GrClose  className={style.close}/> : <RiMenu4Line className={style.open} />}
             </div>
           </div>
-          <div onClick={handleClicked} className="links">
-            <Link href="/" className="link">Home</Link>
-            <Link href="/projects" className="link">Projects</Link>
-            <Link href="/resume" className="link">Resumé</Link>
-            <Link  href="/aboutme" className="link">About</Link>
+          <div onClick={handleClicked} className={style.links}>
+            <Link href="/" className={style.link}>Home</Link>
+            <Link href="/projects" className={style.link}>Projects</Link>
+            <Link href="/resume" className={style.link}>Resumé</Link>
+            <Link  href="/aboutme" className={style.link}>About</Link>
           </div>
         </div>
       </div>
-      <hr className='headerHr' />
+      <hr className={style.headerHr} />
     </div>
   )
 }

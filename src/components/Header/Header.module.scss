@@ -4,13 +4,8 @@
 .header{
   height: 70px;
   width: 100%;
-  margin: 10px;
-  background-color: white;
+  padding-bottom: 5px;
 
-  @include respond(mobile){
-    margin: 0;
-  }
-  
   .headerWrapper{
     height: 100%;
     display: flex;
@@ -87,7 +82,7 @@
               position: relative;
               text-decoration: none;
               font-size: 20px;
-              color: black;
+              color: #0b0c0de1;
               font-weight: 500;
               cursor: pointer;
 
@@ -95,13 +90,13 @@
                 content: '';
                 position: absolute;
                 left: 0;
-                right: 0;
+                bottom: 0;
                 width: 100%;
                 height: 2px;
-                background-color: black;
+                background-color: #0b0c0de1;
                 border-radius: 4px;
-                scale: 0.1;
-                transform-origin: right ;
+                scale: 0 1;
+                transform-origin: right;
                 transition: scale 0.25s;
               }
   
@@ -136,8 +131,9 @@
   .headerHr{
     height: 2px;
     margin: 0 150px;
-    background-color: black;
+    background-color: #0b0c0de1;
     justify-content: space-around;
+    box-shadow: -0.5px 0px 0.5px 0.5px #0b0c0de1;
     border: none;
 
     @include respond(mobile){

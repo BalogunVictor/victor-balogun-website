@@ -7,10 +7,8 @@
   display: flex;
   justify-content: flex-end;
   padding: 20px 0;
-  z-index: 999999;
+  z-index: 99;
   
-
-
   @include respond (mobile){
     display: inline;
   }
@@ -58,18 +56,18 @@
         cursor: pointer;
 
       .icon{
-        border: 2px solid black;
+        border: 2px solid #0b0c0de1;
         font-size: 40px;
         border-radius: 50%;
-        color: black;
-        box-shadow: -1px 0px 4px 4px black;
+        color: #0b0c0de1;
+        box-shadow: -1px 0px 4px 4px #0b0c0de1;
         padding: 2px 2px;
         margin-bottom: 10px;
       }
     } 
   }
     .vl{
-      border-right: 5px solid black;
+      border-right: 5px solid #0b0c0de1;
       height: 100px;
       margin-right: 12px;
 

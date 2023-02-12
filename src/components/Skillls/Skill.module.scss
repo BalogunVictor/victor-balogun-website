@@ -1,0 +1,22 @@
+.skills{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  
+
+  .skillsWrapper{
+    
+   
+
+    .card{
+      display: flex;
+      padding-top: 10px;
+
+    }
+  }
+
+
+
+
+
+}

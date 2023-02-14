@@ -36,7 +36,7 @@ const royalclothing = () => {
               Stripe API. Redux and Redux-Saga is also being implemented for
               app-wide state management.
             </p>
-            <a href="/" target="_blank" rel="noreferrer" className="px-6">
+            <a href="https://github.com/BalogunVictor/royal-clothing" target="_blank" rel="noreferrer" className="px-6">
               <CustomButton>Code</CustomButton>
             </a>
             <a

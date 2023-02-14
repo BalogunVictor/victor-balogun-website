@@ -37,10 +37,10 @@ const netflix = () => {
               selection. The Recoil hook is also being implemented for app-wide
               state management.
             </p>
-            <a href="/" target="_blank" rel="noreferrer" className="px-6">
+            <a href="https://github.com/BalogunVictor/Netflix-clone-app" target="_blank" rel="noreferrer" className="px-6">
               <CustomButton>Code</CustomButton>
             </a>
-            <a href="/" target="_blank" rel="noreferrer">
+            <a href="https://netflix-clone-app-wheat.vercel.app/" target="_blank" rel="noreferrer">
               <CustomButton>Demo</CustomButton>
             </a>
           </div>

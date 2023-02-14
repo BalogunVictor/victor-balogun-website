@@ -32,7 +32,7 @@ const expensetracker = () => {
               This application allows users to keep an accurate record of your money inflow and outflow.
                The context and useReducer hook is also being implemented for app-wide state management.
             </p>
-            <a href="/" target="_blank" rel="noreferrer" className="px-6">
+            <a href="https://github.com/BalogunVictor/Expense-Tracker" target="_blank" rel="noreferrer" className="px-6">
               <CustomButton>Code</CustomButton>
             </a>
             <a

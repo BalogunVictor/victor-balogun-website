@@ -1,0 +1,11 @@
+@import './mixin';
+
+.Title{
+  font-weight: 900;
+  font-size: 50px;
+  padding-top: 30px;
+  @include respond (small-lap){
+    font-size: 40px;
+  }
+
+}

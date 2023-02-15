@@ -30,7 +30,7 @@
       }
 
       @include respond(mobile){
-        font-size: 25px;
+        font-size: 20px;
         z-index: 999;
       }
     }
@@ -44,7 +44,7 @@
 
         .menuIcon {
           display:none;
-          font-size: 40px;
+          font-size: 30px;
 
           @include respond(mobile) {
             display: block;
@@ -108,7 +108,7 @@
               }
 
               @include respond(mobile){
-                font-size: 50px;
+                font-size: 45px;
                 padding-top: 40px;
               }
             }

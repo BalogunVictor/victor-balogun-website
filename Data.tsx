@@ -16,6 +16,11 @@ export const skills = [
     name: "javascript",
   },
   {
+    id:3,
+    logo: '/assets/skills/typescript.png',
+    name: "typescript",
+  },
+  {
     id:4,
     logo: '/assets/skills/react.png',
     name: "React",
@@ -47,12 +52,12 @@ export const skills = [
   },
   {
     id:10,
-    logo: '/assets/skills/html.png',
+    logo: '/assets/skills/github1.png',
     name: "github",
   },
   {
     id:11,
-    logo: '/assets/skills/html.png',
+    logo: '/assets/skills/redux.png',
     name: "Redux",
   },
 ]

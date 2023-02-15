@@ -23,7 +23,6 @@ function about() {
             </div>
 
             <div className={style.aboutText}>
-              <h2 className="py-4 text-4xl">who am i.</h2>
               <p>
                 My name is Victor Balogun,I specialize in building mobile
                 responsive front-end UI applications that connect with API’s and
@@ -38,7 +37,7 @@ function about() {
               </p>
               <p>
                 I started front-end development in 2020,I have built multiple
-                projects like e-commerce, chat and social applcations and also
+                projects like e-commerce, chat and social applications and also
                 cloned popular brands website like Netflix and Youtube e.t.c. In
                 my spare time I run a Fashion Brand where I create aesthetic
                 designs.

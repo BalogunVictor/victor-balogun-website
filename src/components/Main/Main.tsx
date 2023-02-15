@@ -9,7 +9,7 @@ export const Main = () => {
         <div className={style.maintext}>
           <h1>Hi, i’m <span>Victor</span> </h1>
           <p>I’m a frontend developer based in Lagos, Nigeria. specializing in building quality,<br/>  responsive websites with exceptional user experience.<br/>
-          Currently, I’m focused on building front-end web appications and integrating back-end technologies </p>
+          Currently, I’m focused on building front-end web applications and integrating back-end technologies </p>
           </div>
               <div className={style.options}>
                 <Link href='/resume' className={style.option}>

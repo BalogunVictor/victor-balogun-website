@@ -32,7 +32,7 @@ const netflix = () => {
               I built this application in Next JS and is hosted on Vercel. This
               app features user authentication with firebase as well as the
               firestore cloud storage database. This application is pulling
-              movie data from an the IMDB movie API and displaying different
+              movie data from an API the TMDB movie API and displaying different
               categories. It features horizontal sliding and a featured
               selection. The Recoil hook is also being implemented for app-wide
               state management.
@@ -61,7 +61,13 @@ const netflix = () => {
                   <RiRadioButtonFill className="pr-1" /> Firebase
                 </p>
                 <p className="text-gray-600 py-2 flex items-center">
-                  <RiRadioButtonFill className="pr-1" /> IMDB API
+                  <RiRadioButtonFill className="pr-1" /> TMDB API
+                </p>   
+                <p className="text-gray-600 py-2 flex items-center">
+                  <RiRadioButtonFill className="pr-1" /> React-Player
+                </p>   
+                <p className="text-gray-600 py-2 flex items-center">
+                  <RiRadioButtonFill className="pr-1" /> Recoil
                 </p>
               </div>
             </div>

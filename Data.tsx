@@ -1,3 +1,7 @@
+import netflix from "@/pages/netflix"
+import royalclothing from "@/pages/royalclothing"
+import wikkychat from "@/pages/wikkychat"
+
 export const skills = [
 
   {
@@ -60,4 +64,168 @@ export const skills = [
     logo: '/assets/skills/redux.png',
     name: "Redux",
   },
+]
+
+
+export const projects = [
+  {
+    id: "netflix",
+    imageUrl: "/assets/projects/netflix.jpg",
+    name:"Netflix App",
+    tools: "React JS / Tailwind / Firebase",
+    about: ` I built this application in Next JS and is hosted on Vercel. This
+    app features user authentication with firebase as well as the
+    firestore cloud storage database. This application is pulling
+    movie data from an API the TMDB movie API and displaying different
+    categories. It features horizontal sliding and a featured
+    selection. The Recoil hook is also being implemented for app-wide
+    state management.`,
+    codeUrl:"https://github.com/BalogunVictor/Netflix-clone-app",
+    demoUrl:"https://netflix-clone-app-wheat.vercel.app/",
+    softwares: [{
+      id:1,
+      name:"React"
+    },
+    {
+      id:2,
+      name:"Tailwind"
+    },
+    {
+      id:3,
+      name:"Javascript"
+    },
+    {
+      id:4,
+      name:"Firebase"
+    },
+    {
+      id:5,
+      name:"TMDB API"
+    },
+    {
+      id:6,
+      name:"React-player"
+    },
+    {
+      id:7,
+      name:"Recoil"
+    },
+  ]
+      
+  },
+  {
+    id: "royalclothing",
+    imageUrl: "/assets/projects/royalClothing.png",
+    name:"Royal clothing",
+    tools: "React JS / Scss / Firebase",
+    about: ` I built this application in React JS and is hosted on Netlify.
+    This app features user authentication with firebase as well as the
+    firestore cloud storage database. This application allows user
+    navigate between different categories and products. A shopping
+    cart management with implementation of a means of payment with
+    Stripe API. Redux and Redux-Saga is also being implemented for
+    app-wide state management.`,
+    codeUrl:"https://github.com/BalogunVictor/royal-clothing",
+    demoUrl:"https://live-royal-clothing.netlify.app/",
+    softwares: [
+      {
+        id:1,
+        name:"React"
+      },
+      {
+        id:2,
+        name:"Tailwind"
+      },
+      {
+        id:3,
+        name:"Javascript"
+      },
+      {
+        id:4,
+        name:"Firebase"
+      },
+      {
+        id:5,
+        name:"Redux"
+      },
+      {
+        id:6,
+        name:"Redux-Saga"
+      },
+      {
+        id:7,
+        name:"Stripe APi"
+      },
+    ]
+      
+  },
+  {
+    id: "wikkychat",
+    imageUrl: "/assets/projects/wikkyChat.png",
+    name:"wikkychat",
+    tools: "React JS / Sass / Firebase",
+    about: ` I built this application in React JS and is hosted on Netlify.
+    This app features user authentication with firebase as well as the
+    firestore cloud storage database. This application allows users
+    send a real-time chat messages and Search for Users. The context
+    APi hook is also being implemented for app-wide state management.`,
+    codeUrl:"https://github.com/BalogunVictor/wikky-chat" ,
+    demoUrl:"https://wikky-chat.netlify.app/",
+    softwares: [
+      {
+        id:1,
+        name:"React"
+      },
+      {
+        id:2,
+        name:"Scss"
+      },
+      {
+        id:3,
+        name:"Javascript"
+      },
+      {
+        id:4,
+        name:"Firebase"
+      },
+      {
+        id:5,
+        name:"Context API"
+      },
+    ]
+      
+  },
+  {
+    id: "expensetracker",
+    imageUrl: "/assets/projects/expenseTracker.png",
+    name:"Expense Tracker",
+    tools: "React JS / css",
+    about: `I built this application in React JS and is hosted on Netlify.
+    This application allows users to keep an accurate record of your money inflow and outflow.
+     The context and useReducer hook is also being implemented for app-wide state management.`,
+    codeUrl:"https://github.com/BalogunVictor/Expense-Tracker",
+    demoUrl:"https://wikky-chat.netlify.app/",
+    softwares: [
+      {
+        id:1,
+        name:"React"
+      },
+      {
+        id:2,
+        name:"Css"
+      },
+      {
+        id:3,
+        name:"Javascript"
+      },
+      {
+        id:4,
+        name:"Firebase"
+      },
+      {
+        id:5,
+        name:"Context API"
+      },
+    ] 
+  }
 ]

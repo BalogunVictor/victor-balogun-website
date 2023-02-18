@@ -1,6 +1,6 @@
 import Layout from "@/Layout";
-import { ProjectItem } from "../components/ProjectItem";
-import style from "../styles/title.module.scss";
+import { ProjectItem } from "../../components/ProjectItem";
+import style from "../../styles/title.module.scss";
 
 function projects() {
   return (
@@ -13,28 +13,28 @@ function projects() {
             <ProjectItem
               title="E-commerce App"
               src={"/assets/projects/royalClothing.png"}
-              projectUrl="/royalclothing"
+              projectUrl="/projects/royalclothing"
               tool="React Js"
             />
 
             <ProjectItem
               title="Netflix App"
               src={"/assets/projects/netflix.jpg"}
-              projectUrl="/netflix"
+              projectUrl="/projects/netflix"
               tool="Next Js"
             />
 
             <ProjectItem
               title="Chat App"
               src={"/assets/projects/wikkyChat.png"}
-              projectUrl="/wikkychat"
+              projectUrl="/projects/wikkychat"
               tool="React Js"
             />
 
             <ProjectItem
               title="Expense Tracker"
               src={"/assets/projects/expenseTracker.png"}
-              projectUrl="/expensetracker"
+              projectUrl="/projects/expensetracker"
               tool="React Js"
             />
           </div>

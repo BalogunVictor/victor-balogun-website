@@ -1,7 +1,3 @@
-import netflix from "@/pages/netflix"
-import royalclothing from "@/pages/royalclothing"
-import wikkychat from "@/pages/wikkychat"
-
 export const skills = [
 
   {
@@ -154,7 +150,7 @@ export const projects = [
       },
       {
         id:7,
-        name:"Stripe APi"
+        name:"Stripe API"
       },
     ]
       
@@ -204,7 +200,7 @@ export const projects = [
     This application allows users to keep an accurate record of your money inflow and outflow.
      The context and useReducer hook is also being implemented for app-wide state management.`,
     codeUrl:"https://github.com/BalogunVictor/Expense-Tracker",
-    demoUrl:"https://wikky-chat.netlify.app/",
+    demoUrl:"https://live-expense-tracker.netlify.app/",
     softwares: [
       {
         id:1,
@@ -228,4 +224,35 @@ export const projects = [
       },
     ] 
   }
+]
+
+export const ProjectsItem = [
+  {
+    id:1,
+    title:"E-commerce App",
+    src:"/assets/projects/royalClothing.png",
+    projectUrl:"/projects/royalclothing",
+    tool:"React Js"
+  },
+  {
+    id:2,
+    title:"Netflix App",
+    src:"/assets/projects/netflix.jpg",
+    projectUrl:"/projects/netflix",
+    tool:"Next Js"
+  },
+  {
+    id:3,
+    title:"Chat App",
+    src:"/assets/projects/wikkyChat.png",
+    projectUrl:"/projects/wikkychat",
+    tool:"React Js"
+  },
+  {
+    id:4,
+    title:"Expense Tracker",
+    src:"/assets/projects/expenseTracker.png",
+    projectUrl:"/projects/expensetracker",
+    tool:"React Js"
+  },
 ]

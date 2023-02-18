@@ -1,6 +1,15 @@
 import Layout from "@/Layout";
+import { ProjectsItem } from "Data";
 import { ProjectItem } from "../../components/ProjectItem";
 import style from "../../styles/title.module.scss";
+
+interface itemProps{
+  id:number
+  title:string
+  src:string
+  projectUrl:string
+  tool:string
+}
 
 function projects() {
   return (
@@ -10,33 +19,16 @@ function projects() {
           <p className={style.Title}>Projects</p>
           <h2 className="py-4 text-xl">what I’ve Built</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <ProjectItem
-              title="E-commerce App"
-              src={"/assets/projects/royalClothing.png"}
-              projectUrl="/projects/royalclothing"
-              tool="React Js"
-            />
-
-            <ProjectItem
-              title="Netflix App"
-              src={"/assets/projects/netflix.jpg"}
-              projectUrl="/projects/netflix"
-              tool="Next Js"
-            />
-
-            <ProjectItem
-              title="Chat App"
-              src={"/assets/projects/wikkyChat.png"}
-              projectUrl="/projects/wikkychat"
-              tool="React Js"
-            />
-
-            <ProjectItem
-              title="Expense Tracker"
-              src={"/assets/projects/expenseTracker.png"}
-              projectUrl="/projects/expensetracker"
-              tool="React Js"
-            />
+            { ProjectsItem.map((item:itemProps) => (
+              <ProjectItem
+                key={item.id}
+                title={item.title}
+                src={item.src}
+                projectUrl={item.projectUrl}
+                tool={item.tool}
+              />
+              ))
+            }
           </div>
         </div>
       </div>

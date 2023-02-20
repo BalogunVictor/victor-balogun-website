@@ -1,3 +1,4 @@
+import { ArrowRightButton } from "@/components/Button/Button";
 import { Skills } from "@/components/Skillls/Skills";
 import Layout from "@/Layout";
 import { skills } from "Data";
@@ -42,12 +43,12 @@ function about() {
                 my spare time I run a Fashion Brand where I create aesthetic
                 designs.
               </p>
-              <p>
-                check out some of my{" "}
-                <Link rel="stylesheet" href="/projects">
-                  projects
-                </Link>{" "}
+                
+                <Link  href="/projects">
+              <p className="flex"> 
+                check out some of my projects <ArrowRightButton />
               </p>
+                </Link>
             </div>
           </div>
         </div>

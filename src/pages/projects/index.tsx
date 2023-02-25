@@ -1,6 +1,6 @@
 import Layout from "@/Layout";
 import { ProjectsItem } from "Data";
-import { ProjectItem } from "../../components/ProjectItem";
+import { ProjectItem } from "../../components/ProjectItem/ProjectItem";
 import style from "../../styles/title.module.scss";
 
 interface itemProps{

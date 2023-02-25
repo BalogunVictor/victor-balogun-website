@@ -28,7 +28,7 @@ export const Header = () => {
             <Link href="/" className={style.link}>Home</Link>
             <Link href="/projects" className={style.link}>Projects</Link>
             <Link href="/resume" className={style.link}>Resumé</Link>
-            <Link  href="/about" className={style.link}>About</Link>
+            <Link  href="/about " className={style.link}>About</Link>
           </div>
         </div>
       </div>

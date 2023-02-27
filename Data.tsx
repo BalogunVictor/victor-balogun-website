@@ -80,15 +80,15 @@ export const projects = [
     demoUrl:"https://netflix-clone-app-wheat.vercel.app/",
     softwares: [{
       id:1,
-      name:"React"
+      name:"Nextjs"
     },
     {
       id:2,
-      name:"Tailwind"
+      name:"Typescript"
     },
     {
       id:3,
-      name:"Javascript"
+      name:"Tailwind"
     },
     {
       id:4,

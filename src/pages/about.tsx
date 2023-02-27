@@ -18,7 +18,7 @@ function about() {
               <Image
                 height={500}
                 width={600}
-                src="/assets/victor.png"
+                src="/assets/victor-balogun.png"
                 alt="victorImage"
               />
             </div>

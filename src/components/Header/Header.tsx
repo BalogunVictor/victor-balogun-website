@@ -8,7 +8,7 @@ export const Header = () => {
   const [clicked, setClicked] = useState(false);
 
   const handleClicked = () => {
-    setClicked((prev) => !prev);
+    setClicked((previous) => !previous);
   };
 
   return (

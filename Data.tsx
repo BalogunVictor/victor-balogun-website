@@ -77,7 +77,7 @@ export const projects = [
     selection. The Recoil hook is also being implemented for app-wide
     state management.`,
     codeUrl:"https://github.com/BalogunVictor/Netflix-clone-app",
-    demoUrl:"https://netflix-clone-app-wheat.vercel.app/",
+    demoUrl:"hhttps://live-net-flix-clone.netlify.app/",
     softwares: [{
       id:1,
       name:"Nextjs"

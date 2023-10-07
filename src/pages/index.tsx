@@ -1,6 +1,7 @@
 import { Inter } from '@next/font/google';
 import Head from 'next/head';
 
+import { Button } from '@/components/Button/Button';
 import Layout from '@/Layout';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -15,7 +16,11 @@ export default function Home() {
         <link href="/favicon.ico" rel="icon" />
       </Head>
       <main>
-        <Layout></Layout>
+        <Layout>
+          <Button size="md" variant="primary">
+            Learn more
+          </Button>
+        </Layout>
       </main>
     </>
   );

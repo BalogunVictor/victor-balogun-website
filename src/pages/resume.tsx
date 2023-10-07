@@ -7,7 +7,6 @@ import Layout from '@/Layout';
 // Import the styles
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
-import style from '../styles/title.module.scss';
 
 // style={{ height: '750px',  width: '750px'}}
 
@@ -17,7 +16,7 @@ const resume = () => {
   return (
     <Layout>
       <div className="flex flex-col items-center justify-center py-16">
-        <h1 className={style.Title}>Resumé</h1>
+        <h1>Resumé</h1>
 
         <div className="h-[750px] w-[750px]">
           <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.3.122/build/pdf.worker.min.js">

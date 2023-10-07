@@ -1,9 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 * {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Montserrat', sans-serif;
   color: #0b0c0de1;
 }
 
@@ -13,7 +14,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   background: #f2f2f281;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
 
 @layer base {
@@ -27,10 +28,19 @@ body {
   }
 
   h1 {
-    @apply font-[Raleway] text-4xl sm:text-5xl md:text-6xl;
+    @apply text-4xl sm:text-5xl md:text-6xl;
   }
 
   h2 {
     @apply text-3xl sm:text-4xl;
+  }
+}
+
+@layer components {
+  .center-item {
+    @apply flex items-center justify-center;
+  }
+  .full {
+    @apply h-full w-full;
   }
 }

@@ -2,12 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   font-family: 'Playfair Display', serif;
   color: #0b0c0de1;
 }
 
-html,body{
+html,
+body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -16,15 +17,20 @@ html,body{
 }
 
 @layer base {
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-bold
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
   }
- 
+
   h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl font-[Raleway]
+    @apply font-[Raleway] text-4xl sm:text-5xl md:text-6xl;
   }
 
   h2 {
-    @apply text-3xl sm:text-4xl
+    @apply text-3xl sm:text-4xl;
   }
 }

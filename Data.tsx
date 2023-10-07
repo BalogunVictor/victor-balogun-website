@@ -1,258 +1,92 @@
 export const skills = [
-
   {
-    id:1,
+    id: 1,
     logo: '/assets/skills/html.png',
-    name: "Html",
+    name: 'Html',
   },
   {
-    id:2,
+    id: 2,
     logo: '/assets/skills/css.png',
-    name: "css",
+    name: 'css',
   },
   {
-    id:3,
+    id: 3,
     logo: '/assets/skills/javascript.png',
-    name: "javascript",
+    name: 'javascript',
   },
   {
-    id:3,
+    id: 3,
     logo: '/assets/skills/typescript.png',
-    name: "typescript",
+    name: 'typescript',
   },
   {
-    id:4,
+    id: 4,
     logo: '/assets/skills/react.png',
-    name: "React",
+    name: 'React',
   },
   {
-    id:5,
+    id: 5,
     logo: '/assets/skills/nextjs.png',
-    name: "nextjs",
+    name: 'nextjs',
   },
   {
-    id:6,
+    id: 6,
     logo: '/assets/skills/tailwind.png',
-    name: "tailwind",
+    name: 'tailwind',
   },
   {
-    id:7,
+    id: 7,
     logo: '/assets/skills/sass.png',
-    name: "Scss",
+    name: 'Scss',
   },
   {
-    id:8,
+    id: 8,
     logo: '/assets/skills/firebase.png',
-    name: "firebase",
+    name: 'firebase',
   },
   {
-    id:9,
+    id: 9,
     logo: '/assets/skills/git.png',
-    name: "git",
+    name: 'git',
   },
   {
-    id:10,
+    id: 10,
     logo: '/assets/skills/github1.png',
-    name: "github",
+    name: 'github',
   },
   {
-    id:11,
+    id: 11,
     logo: '/assets/skills/redux.png',
-    name: "Redux",
+    name: 'Redux',
   },
-]
+];
 
+// MAIN PAGE ABOUT
 
-export const projects = [
-  {
-    id: "netflix",
-    imageUrl: "/assets/projects/netflix.jpg",
-    name:"Netflix App",
-    tools: "React JS / Tailwind / Firebase",
-    about: ` I built this application in Next JS and is hosted on Vercel. This
-    app features user authentication with firebase as well as the
-    firestore cloud storage database. This application is pulling
-    movie data from an API the TMDB movie API and displaying different
-    categories. It features horizontal sliding and a featured
-    selection. The Recoil hook is also being implemented for app-wide
-    state management.`,
-    codeUrl:"https://github.com/BalogunVictor/Netflix-clone-app",
-    demoUrl:"hhttps://live-net-flix-clone.netlify.app/",
-    softwares: [{
-      id:1,
-      name:"Nextjs"
-    },
-    {
-      id:2,
-      name:"Typescript"
-    },
-    {
-      id:3,
-      name:"Tailwind"
-    },
-    {
-      id:4,
-      name:"Firebase"
-    },
-    {
-      id:5,
-      name:"TMDB API"
-    },
-    {
-      id:6,
-      name:"React-player"
-    },
-    {
-      id:7,
-      name:"Recoil"
-    },
-  ]
-      
-  },
-  {
-    id: "royalclothing",
-    imageUrl: "/assets/projects/royalClothing.png",
-    name:"Royal clothing",
-    tools: "React JS / Scss / Firebase",
-    about: ` I built this application in React JS and is hosted on Netlify.
-    This app features user authentication with firebase as well as the
-    firestore cloud storage database. This application allows user
-    navigate between different categories and products. A shopping
-    cart management with implementation of a means of payment with
-    Stripe API. Redux and Redux-Saga is also being implemented for
-    app-wide state management.`,
-    codeUrl:"https://github.com/BalogunVictor/royal-clothing",
-    demoUrl:"https://live-royal-clothing.netlify.app/",
-    softwares: [
-      {
-        id:1,
-        name:"React"
-      },
-      {
-        id:2,
-        name:"Tailwind"
-      },
-      {
-        id:3,
-        name:"Javascript"
-      },
-      {
-        id:4,
-        name:"Firebase"
-      },
-      {
-        id:5,
-        name:"Redux"
-      },
-      {
-        id:6,
-        name:"Redux-Saga"
-      },
-      {
-        id:7,
-        name:"Stripe API"
-      },
-    ]
-      
-  },
-  {
-    id: "wikkychat",
-    imageUrl: "/assets/projects/wikkyChat.png",
-    name:"wikkychat",
-    tools: "React JS / Sass / Firebase",
-    about: ` I built this application in React JS and is hosted on Netlify.
-    This app features user authentication with firebase as well as the
-    firestore cloud storage database. This application allows users
-    send a real-time chat messages and Search for Users. The context
-    APi hook is also being implemented for app-wide state management.`,
-    codeUrl:"https://github.com/BalogunVictor/wikky-chat" ,
-    demoUrl:"https://wikky-chat.netlify.app/",
-    softwares: [
-      {
-        id:1,
-        name:"React"
-      },
-      {
-        id:2,
-        name:"Scss"
-      },
-      {
-        id:3,
-        name:"Javascript"
-      },
-      {
-        id:4,
-        name:"Firebase"
-      },
-      {
-        id:5,
-        name:"Context API"
-      },
-    ]
-      
-  },
-  {
-    id: "expensetracker",
-    imageUrl: "/assets/projects/expenseTracker.png",
-    name:"Expense Tracker",
-    tools: "React JS / css",
-    about: `I built this application in React JS and is hosted on Netlify.
-    This application allows users to keep an accurate record of your money inflow and outflow.
-     The context and useReducer hook is also being implemented for app-wide state management.`,
-    codeUrl:"https://github.com/BalogunVictor/Expense-Tracker",
-    demoUrl:"https://live-expense-tracker.netlify.app/",
-    softwares: [
-      {
-        id:1,
-        name:"React"
-      },
-      {
-        id:2,
-        name:"Css"
-      },
-      {
-        id:3,
-        name:"Javascript"
-      },
-      {
-        id:4,
-        name:"Firebase"
-      },
-      {
-        id:5,
-        name:"Context API"
-      },
-    ] 
-  }
-]
+// I’m a frontend developer based in Lagos, Nigeria.specializing in building quality,
+// responsive websites with exceptional user experience.
+// Currently, I’m focused on building front - end web applications and integrating back - end
+// technologies
 
-export const ProjectsItem = [
-  {
-    id:1,
-    title:"E-commerce App",
-    src:"/assets/projects/royalClothing.png",
-    projectUrl:"/projects/royalclothing",
-    tool:"React Js"
-  },
-  {
-    id:2,
-    title:"Netflix App",
-    src:"/assets/projects/netflix.jpg",
-    projectUrl:"/projects/netflix",
-    tool:"Next Js"
-  },
-  {
-    id:3,
-    title:"Chat App",
-    src:"/assets/projects/wikkyChat.png",
-    projectUrl:"/projects/wikkychat",
-    tool:"React Js"
-  },
-  {
-    id:4,
-    title:"Expense Tracker",
-    src:"/assets/projects/expenseTracker.png",
-    projectUrl:"/projects/expensetracker",
-    tool:"React Js"
-  },
-]
+// ABOUT ME PAGE
+
+// My name is Victor Balogun, I specialize in building mobile responsive front - end UI applications that connect with API’s and other backend technologies.I’m very passionate about learning new technologies and understand there is more than one way to accomplish a task.I love using my skill set to simplify work for enterprises.Though I am most proficient in building front - end applications using HTML, SCSS, Javascript, React and Typescript, I am a quick learner and can pick up new tech stacks as needed.I believe that being a great developer is not using one specific language, but choosing the best tool for the job.
+// I started front-end development in 2020,I have built multiple
+// projects like e-commerce, chat and social applications and also
+// cloned popular brands website like Netflix and Youtube e.t.c. In
+// my spare time I run a Fashion Brand where I create aesthetic
+// designs.
+
+// LINKS & ICONS
+
+//-------------------------github-------------------------------
+// href="https://github.com/BalogunVictor"
+// AiOutlineGithub
+
+//-------------------------linkedIn-------------------------------
+// "https://www.linkedin.com/in/balogun(moyinoluwa)victor"
+// BsLinkedin
+
+//-------------------------twitter-------------------------------
+// "https://twitter.com/blvckaddiict"
+// AiOutlineTwitter

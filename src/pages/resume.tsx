@@ -2,7 +2,7 @@ import { Viewer, Worker } from '@react-pdf-viewer/core';
 // Import the main component
 import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
 
-import Layout from '@/Layout';
+import Layout from '@/layout';
 
 // Import the styles
 import '@react-pdf-viewer/core/lib/styles/index.css';

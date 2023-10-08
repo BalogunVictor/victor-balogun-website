@@ -1,11 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+@import url('.././gilroy-fonts/stylesheet.css');
 
 * {
-  font-family: 'Montserrat', sans-serif;
-  color: #0b0c0de1;
+  font-family: Gilroy;
+  color: white;
 }
 
 html,
@@ -13,7 +14,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background: #f2f2f281;
+  background-color: #0c0c0d;
   scroll-behavior: smooth !important;
 }
 

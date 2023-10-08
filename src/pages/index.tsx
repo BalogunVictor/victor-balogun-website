@@ -17,6 +17,7 @@ export default function Home() {
           <Button size="md" variant="primary">
             Learn more
           </Button>
+          <h2>Girloy TEXT Italics</h2>
         </Layout>
       </main>
     </>

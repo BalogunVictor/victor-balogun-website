@@ -14,10 +14,9 @@ export default function Home() {
       </Head>
       <main>
         <Layout>
-          <Button size="md" variant="primary">
-            Learn more
-          </Button>
+          <Button variant="primary">Learn more</Button>
           <h2>Girloy TEXT Italics</h2>
+          <p>I&apos;m a frontend developer</p>
         </Layout>
       </main>
     </>

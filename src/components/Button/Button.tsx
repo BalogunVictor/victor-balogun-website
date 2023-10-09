@@ -2,7 +2,7 @@ import { type ButtonHTMLAttributes, type DetailedHTMLProps } from 'react';
 import { type VariantProps, cva } from 'class-variance-authority';
 
 const buttonstyle = cva(
-  'rounded-full text-base font-medium border border-black',
+  'rounded-xl text-base font-medium border border-[#CBCBCD]',
   {
     defaultVariants: {
       size: 'sm',
@@ -15,7 +15,7 @@ const buttonstyle = cva(
       },
       variant: {
         primary:
-          'bg-transparent leading-5 text-black duration-300 ease-in hover:scale-90 hover:bg-black hover:text-white',
+          'bg-transparent leading-5 text-[#CBCBCD] duration-300 ease-in hover:scale-90 hover:bg-[#CBCBCD] hover:text-black',
         secondary:
           'bg-transparent text-white duration-300 ease-in hover:scale-90 hover:bg-white hover:text-black',
       },

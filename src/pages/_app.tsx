@@ -10,7 +10,7 @@ import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <NextProgress color="#0d9488" options={{ showSpinner: false }} />
+      <NextProgress color="#58804d" options={{ showSpinner: false }} />
       <Toaster
         position="top-right"
         toastOptions={{

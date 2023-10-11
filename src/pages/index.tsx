@@ -25,7 +25,6 @@ export default function Home() {
           <Button variant="primary">Learn more</Button>
           <h2>Girloy TEXT Italics</h2>
           <p>I&apos;m a frontend developer</p>
-
           <Navigation onNavigationItemClick={handleExpanded} />
         </Layout>
       </main>

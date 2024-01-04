@@ -23,34 +23,7 @@ export default function Home() {
       </Head>
       <main>
         <Layout>
-          <Button variant="primary">Learn more</Button>
-          <FadeInStagger>
-
-            <h2>Girloy TEXT Italics</h2>
-            <p>I&apos;m a frontend developer</p>
-            <Button variant="primary">Learn more</Button>
-            <h2>Girloy TEXT Italics</h2>
-            <p>I&apos;m a frontend developer</p>
-            <Button variant="primary">Learn more</Button>
-            <h2>Girloy TEXT Italics</h2>
-            <p>I&apos;m a frontend developer</p>
-            <Button variant="primary">Learn more</Button>
-            <h2>Girloy TEXT Italics</h2>
-            <p>I&apos;m a frontend developer</p>
-            <Button variant="primary">Learn more</Button>
-            <h2>Girloy TEXT Italics</h2>
-            <p>I&apos;m a frontend developer</p>
-            <Button variant="primary">Learn more</Button>
-            <h2>Girloy TEXT Italics</h2>
-            <p>I&apos;m a frontend developer</p>
-            <Button variant="primary">Learn more</Button>
-            <h2>Girloy TEXT Italics</h2>
-            <p>I&apos;m a frontend developer</p>
-            <Button variant="primary">Learn more</Button>
-            <h2>Girloy TEXT Italics</h2>
-            <p>I&apos;m a frontend developer</p>
-            <Navigation onNavigationItemClick={handleExpanded} />
-          </FadeInStagger>
+          <h1>testing</h1>
         </Layout>
       </main>
       x

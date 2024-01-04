@@ -3,6 +3,7 @@ import { Inter } from '@next/font/google';
 import Head from 'next/head';
 
 import { Button } from '@/components/Button/Button';
+import { FadeInStagger } from '@/components/FadeIn';
 import Navigation from '@/components/Navigation/Navigation';
 import Layout from '@/layout';
 
@@ -23,9 +24,33 @@ export default function Home() {
       <main>
         <Layout>
           <Button variant="primary">Learn more</Button>
-          <h2>Girloy TEXT Italics</h2>
-          <p>I&apos;m a frontend developer</p>
-          <Navigation onNavigationItemClick={handleExpanded} />
+          <FadeInStagger>
+
+            <h2>Girloy TEXT Italics</h2>
+            <p>I&apos;m a frontend developer</p>
+            <Button variant="primary">Learn more</Button>
+            <h2>Girloy TEXT Italics</h2>
+            <p>I&apos;m a frontend developer</p>
+            <Button variant="primary">Learn more</Button>
+            <h2>Girloy TEXT Italics</h2>
+            <p>I&apos;m a frontend developer</p>
+            <Button variant="primary">Learn more</Button>
+            <h2>Girloy TEXT Italics</h2>
+            <p>I&apos;m a frontend developer</p>
+            <Button variant="primary">Learn more</Button>
+            <h2>Girloy TEXT Italics</h2>
+            <p>I&apos;m a frontend developer</p>
+            <Button variant="primary">Learn more</Button>
+            <h2>Girloy TEXT Italics</h2>
+            <p>I&apos;m a frontend developer</p>
+            <Button variant="primary">Learn more</Button>
+            <h2>Girloy TEXT Italics</h2>
+            <p>I&apos;m a frontend developer</p>
+            <Button variant="primary">Learn more</Button>
+            <h2>Girloy TEXT Italics</h2>
+            <p>I&apos;m a frontend developer</p>
+            <Navigation onNavigationItemClick={handleExpanded} />
+          </FadeInStagger>
         </Layout>
       </main>
       x

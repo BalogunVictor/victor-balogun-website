@@ -4,11 +4,6 @@ import axios from 'axios';
 
 import { Button } from '../Button/Button';
 
-// type PaginationProps = {
-//     pageCount: number;
-//     pageIndex: number;
-//     setPageIndex: (index: number) => void;
-// };
 
 const Pagination = () => {
   const linkClassName =
@@ -45,7 +40,7 @@ const Pagination = () => {
         className="flex w-full items-center"
         current={page}
         disabledItemClassName="opacity-60 hover:opacity-60 cursor-auto"
-        onPageChange={(selected) => fetchData(selected)}
+        onPageChange={(currentpage) => fetchData(currentpage)}
         total={totalPages}
       />
     </>

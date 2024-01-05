@@ -1,32 +1,23 @@
-import { useState } from 'react';
-import { Inter } from '@next/font/google';
+import { ReactElement } from 'react';
 import Head from 'next/head';
 
-import { Button } from '@/components/Button/Button';
-import { FadeInStagger } from '@/components/FadeIn';
-import Navigation from '@/components/Navigation/Navigation';
-import Layout from '@/layout';
+import { Layout } from '@/layout';
 
-const inter = Inter({ subsets: ['latin'] });
+import { NextPageWithLayout } from './_app';
 
-export default function Home() {
-  const [expanded, setExpanded] = useState(false);
-
-  const handleExpanded = () => {
-    setExpanded((prev) => !prev);
-  };
-
+const Home: NextPageWithLayout = () => {
   return (
     <>
       <Head>
         <title>Victor Balogun Portfolio - Frontend Developer</title>
       </Head>
       <main>
-        <Layout>
-          <h1>testing</h1>
-        </Layout>
+        <h1>Victor Balogun Portfolio - Frontend Developer</h1>
       </main>
-      x
     </>
   );
-}
+};
+
+Home.getLayout = (page: ReactElement) => <Layout>{page}</Layout>;
+
+export default Home;

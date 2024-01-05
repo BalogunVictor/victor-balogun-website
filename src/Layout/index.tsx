@@ -1,28 +1,125 @@
-import { motion } from 'framer-motion';
+import { ReactNode, useEffect, useId, useState } from 'react';
+import { HiBars2, HiXMark } from 'react-icons/hi2';
+import classNames from 'classnames';
+import { motion, MotionConfig, useReducedMotion } from 'framer-motion';
+// import Link from 'next/link';
+import { useRouter } from 'next/router';
 
-interface Props {
-  children: React.ReactNode;
-}
+// import { socialMediaProfiles } from '@/lib/socialMediaProfiles';
+import Navigation from '@/components/Navigation';
 
-function Layout({ children }: Props) {
-  const variants = {
-    enter: { opacity: 1, x: 0, y: 0 },
-    exit: { opacity: 0, x: 0, y: -100 },
-    hidden: { opacity: 0, x: -200, y: 0 },
+import { Container } from '../components/Container';
+// import { Footer } from './common/Footer';
+import { Header } from '../components/Header';
+
+type LayoutProps = {
+  children: ReactNode;
+};
+
+export const Layout = ({ children }: LayoutProps) => {
+  let panelId = useId();
+  const router = useRouter();
+  let [expanded, setExpanded] = useState(false);
+  let shouldReduceMotion = useReducedMotion();
+  const handleExpanded = () => {
+    setExpanded((prev) => !prev);
   };
 
-  return (
-    <motion.main
-      animate="enter" // Animated state to variants.enter
-      className=""
-      exit="exit" // Exit state (used later) to variants.exit
-      initial="hidden" // Set the initial state to variants.hidden
-      transition={{ type: 'linear' }} // Set the transition to linear
-      variants={variants} // Pass the variant object into Framer Motion
-    >
-      {children}
-    </motion.main>
-  );
-}
+  useEffect(() => {
+    const routerEvent = 'beforeHistoryChange';
 
-export default Layout;
+    const eventHandler = () => {
+      window.scroll(0, 0);
+    };
+
+    router.events.on(routerEvent, eventHandler);
+
+    return () => {
+      router.events.off(routerEvent, eventHandler);
+    };
+  }, [router.events]);
+
+  return (
+    <MotionConfig transition={shouldReduceMotion ? { duration: 0 } : undefined}>
+      <div className="bg-gray-900">
+        <header>
+          <div
+            aria-hidden={expanded ? 'true' : undefined}
+            className="absolute left-0 right-0 top-2 z-40 pt-14">
+            <Header
+              expanded={expanded}
+              icon={HiBars2}
+              onToggle={handleExpanded}
+              panelId={panelId}
+            />
+          </div>
+
+          <motion.div
+            aria-hidden={expanded ? undefined : 'true'}
+            className={classNames(
+              'relative z-50 !overflow-hidden bg-gray-900 pt-2 md:pt-0',
+              {
+                'h-0': !expanded,
+                'h-auto': expanded,
+              }
+            )}
+            id={panelId}
+            layout>
+            <motion.div className="bg-gray-800" layout>
+              <div className="bg-gray-900 pb-16 pt-14">
+                <Header
+                  expanded={expanded}
+                  icon={HiXMark}
+                  invert
+                  onToggle={handleExpanded}
+                  panelId={panelId}
+                />
+              </div>
+              <Navigation onNavigationItemClick={handleExpanded} />
+              <div className="relative bg-gray-900 before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-gray-800">
+                <Container>
+                  <div className="grid grid-cols-1 gap-y-10 pb-16 pt-10 sm:grid-cols-2 sm:pt-16">
+                    <div className="sm:border-l sm:border-transparent">
+                      <h2 className="font-display text-base font-semibold text-white">
+                        Follow us
+                      </h2>
+
+                      {/* <ul
+                        className={classNames('mt-6 flex gap-x-10 text-white')}
+                        role="list"
+                      >
+                        {socialMediaProfiles.map((socialMediaProfile) => (
+                          <li key={socialMediaProfile.title}>
+                            <Link
+                              aria-label={socialMediaProfile.title}
+                              className={classNames('transition')}
+                              href={socialMediaProfile.href}
+                            >
+                              <socialMediaProfile.icon className="h-6 w-6 fill-current" />
+                            </Link>
+                          </li>
+                        ))}
+                      </ul> */}
+                    </div>
+                  </div>
+                </Container>
+              </div>
+            </motion.div>
+          </motion.div>
+        </header>
+
+        {/* <motion.div
+          className="relative overflow-hidden !rounded-tl-[40px] !rounded-tr-[40px] bg-gray-50  md:!rounded-none"
+          layout="position"
+        >
+          <Container className="min-h-screen border-l border-r bg-white px-0 pt-14">
+            <div className="pt-9">
+              <main className="w-full flex-auto">{children}</main>
+              <Footer />
+            </div>
+          </Container>
+        </motion.div> */}
+      </div>
+    </MotionConfig>
+  );
+};

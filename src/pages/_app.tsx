@@ -1,4 +1,6 @@
+import { ReactElement, ReactNode } from 'react';
 import { Toaster } from 'react-hot-toast';
+import { NextPage } from 'next';
 import type { AppProps } from 'next/app';
 import NextProgress from 'nextjs-progressbar';
 
@@ -7,7 +9,17 @@ import '@/styles/globals.css';
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
-export default function App({ Component, pageProps }: AppProps) {
+export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
+  getLayout?: (page: ReactElement) => ReactNode;
+};
+
+type AppPropsWithLayout = AppProps & {
+  Component: NextPageWithLayout;
+};
+
+export default function App({ Component, pageProps }: AppPropsWithLayout) {
+  // Use the layout defined at the page level, if available
+  const getLayout = Component.getLayout || ((page) => page);
   return (
     <>
       <NextProgress color="#58804d" options={{ showSpinner: false }} />
@@ -23,7 +35,7 @@ export default function App({ Component, pageProps }: AppProps) {
           },
         }}
       />
-      <Component {...pageProps} />
+      {getLayout(<Component {...pageProps} />)}
     </>
   );
 }

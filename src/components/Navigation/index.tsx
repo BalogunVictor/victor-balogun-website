@@ -5,7 +5,7 @@ import { Container } from '../Container';
 
 function NavigationRow({ children }: { children: ReactNode }) {
   return (
-    <div className="even:mt-px sm:bg-[#97979b]">
+    <div>
       <Container>
         <div className="grid grid-cols-1 sm:grid-cols-2">{children}</div>
       </Container>
@@ -21,9 +21,9 @@ function NavigationItem({ children, ...rest }: NavigationItemProps) {
   return (
     <Link
       {...rest}
-      className="group relative isolate -mx-6 bg-[#97979b] px-6 py-10 text-[#323234] even:mt-px sm:mx-0 sm:px-0 sm:py-16 sm:odd:pr-16 sm:even:mt-0 sm:even:border-l sm:even:border-[#646468] sm:even:pl-16">
+      className="hover- group relative isolate -mx-6 px-6 py-10 text-white even:mt-px sm:mx-0 sm:px-0 sm:py-16 sm:odd:pr-16 sm:even:mt-0 sm:even:border-l sm:even:border-white sm:even:pl-16">
       {children}
-      <span className="absolute inset-y-0 -z-10 w-screen bg-[#7d7d82] opacity-0 transition group-odd:right-0 group-even:left-0 group-hover:opacity-100" />
+      <span className="absolute inset-y-0 -z-10 w-screen opacity-0 transition group-odd:right-0 group-even:left-0 group-hover:opacity-100" />
     </Link>
   );
 }
@@ -43,7 +43,7 @@ const Navigation = ({ onNavigationItemClick }: NavigationProps) => {
           Resume
         </NavigationItem>
       </NavigationRow>
-
+      <hr className="hidden sm:flex sm:h-px sm:bg-white" />
       <NavigationRow>
         <NavigationItem href="/works" onClick={onNavigationItemClick}>
           Works

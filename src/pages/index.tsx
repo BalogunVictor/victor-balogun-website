@@ -17,11 +17,24 @@ const Home: NextPageWithLayout = () => {
       </Head>
       <main>
         <Container className="mt-24 max-w-5xl sm:mt-40">
-          <div className='flex flex-col justify-center sm:flex-row items-center gap-5 lg:gap-10'>
-            <Image alt='victorImage' height={500} src="/victor-balogun.png" width={250} />
-            <div className='max-w-5xl'>
-              <h2 className='text-white'> I’m a seasoned Software Engineer based in Lagos, Nigeria.</h2>
-              <p className='py-6'> I’m victor, I am experienced in developing secure and dynamic applications. I love using my skill set to simplify work for enterprises and improve the lives of people around me.</p>
+          <div className="flex flex-col items-center justify-center gap-5 sm:flex-row lg:gap-10">
+            <Image
+              alt="victorImage"
+              height={500}
+              src="/victor-balogun.png"
+              width={250}
+            />
+            <div className="max-w-5xl">
+              <h2 className="text-white">
+                {' '}
+                I’m a seasoned Software Engineer based in Lagos, Nigeria.
+              </h2>
+              <p className="py-6">
+                {' '}
+                I’m victor, I am experienced in developing secure and dynamic
+                applications. I love using my skill set to simplify work for
+                enterprises and improve the lives of people around me.
+              </p>
               <Link href="/work">
                 <Button>Works</Button>
               </Link>

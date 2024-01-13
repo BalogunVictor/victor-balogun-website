@@ -31,11 +31,11 @@ export function Header({
   // const HtmlTag: React.FC<HtmlTagProps> = ({ children }) => <>{"<" + children + "/>"}</>
   const Logo = () => (
     <Link aria-label="Home" className="group flex" href="/">
-      <h2>{"<"}</h2>
-      <h2 className='hidden sm:flex'>Victor</h2>
-      <h2>{"/>"}</h2>
+      <h2>{'<'}</h2>
+      <h2 className="hidden sm:flex">Victor</h2>
+      <h2>{'/>'}</h2>
     </Link>
-  )
+  );
 
   return (
     <Container>

@@ -41,11 +41,11 @@ export const Layout = ({ children }: LayoutProps) => {
 
   return (
     <MotionConfig transition={shouldReduceMotion ? { duration: 0 } : undefined}>
-      <div className="bg-gray-900 max-w-[2000px]">
+      <div className="max-w-[2000px] bg-gray-900">
         <header>
           <div
             aria-hidden={expanded ? 'true' : undefined}
-            className="absolute max-w-[2000px] left-0 right-0 top-2 z-40 pt-14">
+            className="absolute left-0 right-0 top-2 z-40 max-w-[2000px] pt-14">
             <Header
               expanded={expanded}
               icon={HiBars2}
@@ -110,8 +110,7 @@ export const Layout = ({ children }: LayoutProps) => {
 
         <motion.div
           className="relative overflow-hidden !rounded-tl-[40px] !rounded-tr-[40px] md:!rounded-none"
-          layout="position"
-        >
+          layout="position">
           <Container className="min-h-screen border-l border-r bg-black px-0 pt-14">
             <div className="pt-9">
               <main className="w-full flex-auto">{children}</main>

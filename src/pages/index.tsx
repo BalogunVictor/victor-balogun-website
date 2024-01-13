@@ -1,6 +1,10 @@
 import { ReactElement } from 'react';
 import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
 
+import { Button } from '@/components/Button/Button';
+import { Container } from '@/components/Container';
 import { Layout } from '@/layout';
 
 import { NextPageWithLayout } from './_app';
@@ -12,7 +16,18 @@ const Home: NextPageWithLayout = () => {
         <title>Victor Balogun Portfolio - Frontend Developer</title>
       </Head>
       <main>
-        <h1>Victor Balogun Portfolio - Frontend Developer</h1>
+        <Container className="mt-24 max-w-5xl sm:mt-40">
+          <div className='flex flex-col justify-center sm:flex-row items-center gap-5 lg:gap-10'>
+            <Image alt='victorImage' height={500} src="/victor-balogun.png" width={250} />
+            <div className='max-w-5xl'>
+              <h2 className='text-white'> I’m a seasoned Software Engineer based in Lagos, Nigeria.</h2>
+              <p className='py-6'> I’m victor, I am experienced in developing secure and dynamic applications. I love using my skill set to simplify work for enterprises and improve the lives of people around me.</p>
+              <Link href="/work">
+                <Button>Works</Button>
+              </Link>
+            </div>
+          </div>
+        </Container>
       </main>
     </>
   );

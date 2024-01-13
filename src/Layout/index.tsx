@@ -41,11 +41,11 @@ export const Layout = ({ children }: LayoutProps) => {
 
   return (
     <MotionConfig transition={shouldReduceMotion ? { duration: 0 } : undefined}>
-      <div className="bg-gray-900">
+      <div className="bg-gray-900 max-w-[2000px]">
         <header>
           <div
             aria-hidden={expanded ? 'true' : undefined}
-            className="absolute left-0 right-0 top-2 z-40 pt-14">
+            className="absolute max-w-[2000px] left-0 right-0 top-2 z-40 pt-14">
             <Header
               expanded={expanded}
               icon={HiBars2}
@@ -81,7 +81,7 @@ export const Layout = ({ children }: LayoutProps) => {
                   <div className="grid grid-cols-1 gap-y-10 pb-16 pt-10 sm:grid-cols-2 sm:pt-16">
                     <div className="sm:border-l sm:border-transparent">
                       <h2 className="font-display text-base font-semibold text-white">
-                        Follow us
+                        Follow me
                       </h2>
 
                       {/* <ul
@@ -108,17 +108,16 @@ export const Layout = ({ children }: LayoutProps) => {
           </motion.div>
         </header>
 
-        {/* <motion.div
-          className="relative overflow-hidden !rounded-tl-[40px] !rounded-tr-[40px] bg-gray-50  md:!rounded-none"
+        <motion.div
+          className="relative overflow-hidden !rounded-tl-[40px] !rounded-tr-[40px] md:!rounded-none"
           layout="position"
         >
-          <Container className="min-h-screen border-l border-r bg-white px-0 pt-14">
+          <Container className="min-h-screen border-l border-r bg-black px-0 pt-14">
             <div className="pt-9">
               <main className="w-full flex-auto">{children}</main>
-              <Footer />
             </div>
           </Container>
-        </motion.div> */}
+        </motion.div>
       </div>
     </MotionConfig>
   );

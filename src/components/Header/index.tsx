@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import classNames from 'classnames';
 import Link from 'next/link';
 
@@ -13,6 +13,10 @@ interface HeaderProps {
   onToggle: () => void;
 }
 
+interface HtmlTagProps {
+  children: ReactNode;
+}
+
 export function Header({
   panelId,
   invert = false,
@@ -24,12 +28,19 @@ export function Header({
     onToggle();
   };
 
+  // const HtmlTag: React.FC<HtmlTagProps> = ({ children }) => <>{"<" + children + "/>"}</>
+  const Logo = () => (
+    <Link aria-label="Home" className="group flex" href="/">
+      <h2>{"<"}</h2>
+      <h2 className='hidden sm:flex'>Victor</h2>
+      <h2>{"/>"}</h2>
+    </Link>
+  )
+
   return (
     <Container>
       <div className="flex items-center justify-between">
-        <Link aria-label="Home" className="group" href="/">
-          <h2>{'<Victor/>'}</h2>
-        </Link>
+        <Logo />
         <div className="flex items-center gap-x-8">
           <Link href="/contact">
             <Button>Contact me</Button>

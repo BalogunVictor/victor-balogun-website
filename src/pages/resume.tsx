@@ -1,6 +1,11 @@
+import { ReactElement } from 'react';
 import { Viewer, Worker } from '@react-pdf-viewer/core';
 // Import the main component
 import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
+
+import { Container } from '@/components/Container';
+import { PageIntro } from '@/components/PageIntro';
+import { Layout } from '@/layout';
 
 // Import the styles
 import '@react-pdf-viewer/core/lib/styles/index.css';
@@ -8,22 +13,23 @@ import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
 // style={{ height: '750px',  width: '750px'}}
 
-const resume = () => {
+const Resume = () => {
   const defaultLayoutPluginInstance = defaultLayoutPlugin();
 
   return (
-    <div className="flex flex-col items-center justify-center py-16">
-      <h1>Resumé</h1>
-      <div className="h-[750px] w-[750px]">
-        <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.3.122/build/pdf.worker.min.js">
-          <Viewer
-            fileUrl="/assets/resume/VICTOR BALOGUN-CV.pdf"
-            plugins={[defaultLayoutPluginInstance]}
-          />
-        </Worker>
-      </div>
-    </div>
+    <>
+      <Container className="mt-16 sm:mt-32">
+        <PageIntro eyebrow="Resume" title="My resume reflects me.">
+          <p>
+            My resume provides a comprehensive overview of my skills,
+            experience, and qualifications.
+          </p>
+        </PageIntro>
+      </Container>
+    </>
   );
 };
 
-export default resume;
+Resume.getLayout = (page: ReactElement) => <Layout>{page}</Layout>;
+
+export default Resume;

@@ -11,13 +11,13 @@ export function PageIntro({ eyebrow, title, children, centered = false }: any) {
       )}>
       <FadeIn>
         <h1>
-          <span className="font-display block text-base font-semibold text-gray-900">
+          <span className="font-display block text-base font-semibold">
             {eyebrow}
           </span>
           <span className="sr-only"> - </span>
           <span
             className={classNames(
-              'font-display mt-6 block max-w-5xl text-5xl font-medium tracking-tight text-gray-900 [text-wrap:balance] sm:text-5xl',
+              'font-display mt-6 block max-w-5xl text-5xl font-medium tracking-tight [text-wrap:balance] sm:text-5xl',
               centered && 'mx-auto'
             )}>
             {title}
@@ -25,7 +25,7 @@ export function PageIntro({ eyebrow, title, children, centered = false }: any) {
         </h1>
         <div
           className={classNames(
-            'mt-6 max-w-3xl text-lg text-neutral-600 ',
+            'mt-6 max-w-3xl text-lg',
             centered && 'mx-auto'
           )}>
           {children}

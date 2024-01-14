@@ -34,27 +34,25 @@ type NavigationProps = {
 
 const Navigation = ({ onNavigationItemClick }: NavigationProps) => {
   return (
-    <Container>
-      <nav className="font-display mt-px text-5xl font-medium tracking-tight">
-        <NavigationRow>
-          <NavigationItem href="/about" onClick={onNavigationItemClick}>
-            About Me
-          </NavigationItem>
-          <NavigationItem href="/resume" onClick={onNavigationItemClick}>
-            Resume
-          </NavigationItem>
-        </NavigationRow>
-        <hr className="hidden sm:flex sm:h-px sm:bg-white" />
-        <NavigationRow>
-          <NavigationItem href="/works" onClick={onNavigationItemClick}>
-            Works
-          </NavigationItem>
-          <NavigationItem href="/contact" onClick={onNavigationItemClick}>
-            Hire me
-          </NavigationItem>
-        </NavigationRow>
-      </nav>
-    </Container>
+    <nav className="font-display mt-px text-5xl font-medium tracking-tight">
+      <NavigationRow>
+        <NavigationItem href="/about" onClick={onNavigationItemClick}>
+          About Me
+        </NavigationItem>
+        <NavigationItem href="/resume" onClick={onNavigationItemClick}>
+          Resume
+        </NavigationItem>
+      </NavigationRow>
+      <hr className="hidden sm:flex sm:h-px sm:bg-white" />
+      <NavigationRow>
+        <NavigationItem href="/works" onClick={onNavigationItemClick}>
+          Works
+        </NavigationItem>
+        <NavigationItem href="/contact" onClick={onNavigationItemClick}>
+          Hire me
+        </NavigationItem>
+      </NavigationRow>
+    </nav>
   );
 };
 

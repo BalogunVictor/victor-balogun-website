@@ -22,7 +22,7 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout || ((page) => page);
   return (
     <>
-      <NextProgress color="#58804d" options={{ showSpinner: false }} />
+      <NextProgress color="#fff" options={{ showSpinner: false }} />
       <Toaster
         position="top-right"
         toastOptions={{

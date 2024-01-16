@@ -64,17 +64,17 @@ export const Modal = ({
               leaveTo="opacity-0 scale-95">
               <Dialog.Panel
                 className={classNames(
-                  'relative w-full max-w-md transform space-y-6 overflow-hidden rounded bg-gray-100 p-8 text-left  align-middle shadow-xl transition-all md:p-10',
+                  'relative w-full max-w-md transform space-y-6 overflow-hidden rounded bg-[#CBCBCD] p-8 text-left align-middle  text-black shadow-xl transition-all md:p-10',
                   className
                 )}>
                 <div className="flex items-center justify-between">
-                  <Dialog.Title className="text-sm font-semibold  text-gray-700">
+                  <Dialog.Title className="text-sm font-semibold text-black">
                     {title}
                   </Dialog.Title>
                   <button
                     className="absolute right-0 top-0 p-4 transition-all duration-100 hover:opacity-80"
                     onClick={onClose}>
-                    <HiXMark className="h-4 w-4" />
+                    <HiXMark className="h-4 w-4 fill-black" />
                   </button>
                 </div>
                 <div>{children}</div>

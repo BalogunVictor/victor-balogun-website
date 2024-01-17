@@ -1,8 +1,6 @@
 import { ReactElement, useState } from 'react';
-import { Viewer, Worker } from '@react-pdf-viewer/core';
-// Import the main component
-import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
 
+// Import the main component
 import { Button } from '@/components/Button/Button';
 import { Container } from '@/components/Container';
 import { Modal } from '@/components/modal';

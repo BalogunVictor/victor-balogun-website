@@ -17,7 +17,7 @@ const buttonstyle = cva(
         primary:
           'bg-transparent leading-5 text-[#CBCBCD] duration-300 ease-in hover:scale-90 hover:bg-[#CBCBCD] hover:text-black',
         secondary:
-          'bg-transparent text-white duration-300 ease-in hover:scale-90 hover:bg-white hover:text-black',
+          'text-[#CBCBCD] bg-black duration-300 ease-in hover:scale-90',
       },
     },
   }

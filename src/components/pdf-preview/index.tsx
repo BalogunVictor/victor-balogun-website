@@ -48,18 +48,18 @@ export const PdfPreview = ({ src }: Props) => {
           <ClipboardCopy text={src} />
         </div>
       </Modal>
-      <div className="flex justify-end  gap-2 border-b border-gray-200 bg-gray-100 px-4 py-1">
+      <div className="flex justify-end gap-2 bg-[#CBCBCD] px-4 py-1">
         <Tooltip content="Share">
           <IconButton
             className="!border-none"
             onClick={() => setOpenShareModal(true)}>
-            <IoShareSocialSharp className="text-brand-accent50 h-5 w-5" />
+            <IoShareSocialSharp className="h-5 w-5 fill-black" />
           </IconButton>
         </Tooltip>
         <Tooltip content="Download">
           <Link download href={src}>
             <IconButton className="!border-none">
-              <HiFolderDownload className="text-brand-accent50 h-5 w-5" />
+              <HiFolderDownload className="h-5 w-5 fill-black" />
             </IconButton>
           </Link>
         </Tooltip>
@@ -72,7 +72,7 @@ export const PdfPreview = ({ src }: Props) => {
               className={classNames(
                 'flex w-[700px] max-w-full items-center justify-center',
                 {
-                  'h-[1000px]': !(width < defaultHeight),
+                  'h-[500px]': !(width < defaultHeight),
                   'h-[500px]  sm:h-[800px]': width < defaultHeight,
                 }
               )}>

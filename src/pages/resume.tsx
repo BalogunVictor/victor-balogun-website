@@ -1,20 +1,13 @@
-import { ReactElement, useState } from 'react';
+import { ReactElement } from 'react';
 
-// Import the main component
-import { Button } from '@/components/Button/Button';
 import { Container } from '@/components/Container';
-import { Modal } from '@/components/modal';
 import { PageIntro } from '@/components/PageIntro';
+import { PdfPreview } from '@/components/pdf-preview';
 import { Layout } from '@/layout';
 
-// Import the styles
-import '@react-pdf-viewer/core/lib/styles/index.css';
-import '@react-pdf-viewer/default-layout/lib/styles/index.css';
-
-// style={{ height: '750px',  width: '750px'}}
+const resume_url = process.env.NEXT_PUBLIC_URL + '/VICTOR-BALOGUN-CV.pdf';
 
 const Resume = () => {
-  const [openModal, setOpenModal] = useState(false);
   return (
     <>
       <Container className="mt-16 sm:mt-32">
@@ -24,13 +17,9 @@ const Resume = () => {
             experience, and qualifications.
           </p>
         </PageIntro>
-        <Modal
-          onClose={() => setOpenModal(false)}
-          open={openModal}
-          title="Share my resume">
-          <h1>Testing Modal</h1>
-        </Modal>
-        <Button onClick={() => setOpenModal(true)}>modal</Button>
+        <div className="mt-24 ">
+          <PdfPreview src={resume_url} />
+        </div>
       </Container>
     </>
   );

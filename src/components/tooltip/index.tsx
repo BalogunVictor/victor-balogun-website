@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 type TooltipProps = TippyProps;
 
 export const Tooltip = ({ children, ...props }: TooltipProps) => (
-  <Tippy placement="bottom" {...props}>
+  <Tippy placement="top" {...props}>
     <motion.div whileHover={{ scale: 0.9 }}>{children}</motion.div>
   </Tippy>
 );

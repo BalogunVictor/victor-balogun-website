@@ -9,10 +9,14 @@ type Props = {
 };
 export const ClipboardCopy = ({ text }: Props) => {
   return (
-    <div className="flex w-full items-center gap-2 overflow-auto rounded border border-gray-200 text-sm">
-      <p className="w-[100px] flex-1 p-2 text-xs">{text}</p>
+    <div className="flex w-full items-center gap-2 overflow-auto rounded border border-black/10 text-sm">
+      <p className="w-[100px] flex-1 p-2 text-xs text-black">{text}</p>
       <CopyToClipboard onCopy={() => toast.success('Copied!!!')} text={text}>
-        <Button className="w-max !rounded-none !border-none">Copy</Button>
+        <Button
+          className="w-max !rounded-none !border-none"
+          variant="secondary">
+          Copy
+        </Button>
       </CopyToClipboard>
     </div>
   );

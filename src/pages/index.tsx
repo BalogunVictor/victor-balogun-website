@@ -14,7 +14,7 @@ const Home: NextPageWithLayout = () => {
   return (
     <>
       <Head>
-        <title>Victor Balogun Portfolio - Frontend Developer</title>
+        <title>Victor Balogun Portfolio - Software Developer</title>
       </Head>
       <main>
         <FadeIn>

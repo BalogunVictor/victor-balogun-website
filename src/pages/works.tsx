@@ -1,4 +1,5 @@
 import React, { ReactElement } from 'react';
+import Head from 'next/head';
 
 import Card from '@/components/card';
 import { Container } from '@/components/Container';
@@ -26,6 +27,9 @@ const Portfolio = [
 const Works = () => {
   return (
     <>
+      <Head>
+        <title>Victor Balogun Portfolio - Software Developer</title>
+      </Head>
       <Container>
         <FadeIn>
           <Container>

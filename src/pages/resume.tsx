@@ -1,4 +1,5 @@
 import { ReactElement } from 'react';
+import Head from 'next/head';
 
 import { Container } from '@/components/Container';
 import { FadeIn } from '@/components/FadeIn';
@@ -11,6 +12,9 @@ const resume_url = process.env.NEXT_PUBLIC_URL + '/VICTOR-BALOGUN-CV.pdf';
 const Resume = () => {
   return (
     <>
+      <Head>
+        <title>Victor Balogun Resume - Software Developer</title>
+      </Head>
       <Container className="mt-16 sm:mt-32">
         <FadeIn>
           <Container>

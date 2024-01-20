@@ -111,7 +111,7 @@ export const Layout = ({ children }: LayoutProps) => {
         <motion.div
           className="relative overflow-hidden !rounded-tl-[40px] !rounded-tr-[40px] md:!rounded-none"
           layout="position">
-          <div className="min-h-screen max-w-[2000px] border-l border-r bg-black px-0 pt-14">
+          <div className="mx-auto min-h-screen max-w-[2000px] border-l border-r bg-black px-0 pt-14">
             <div className="pt-9">
               <main>{children}</main>
             </div>

@@ -28,7 +28,7 @@ const Works = () => {
   return (
     <>
       <Head>
-        <title>Victor Balogun Portfolio - Software Developer</title>
+        <title>Victor Balogun Works - Software Developer</title>
       </Head>
       <Container>
         <FadeIn>

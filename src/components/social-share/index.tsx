@@ -43,7 +43,7 @@ export const SocialShare: React.FC<Props> = ({
       {shares.map(({ button: Button, icon: Icon }, index) => (
         <Button key={index} url={url}>
           <IconWrapper>
-            <Icon />
+            <Icon className="fill-black" />
           </IconWrapper>
         </Button>
       ))}

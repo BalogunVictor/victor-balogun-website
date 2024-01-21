@@ -52,7 +52,7 @@ Card.Title = function CardTitle({
   children,
 }: CardTitleProps) {
   return (
-    <Component className="text-base font-semibold tracking-tight text-gray-800 ">
+    <Component className="text-base font-semibold tracking-tight">
       {href ? <Card.Link href={href}>{children}</Card.Link> : children}
     </Component>
   );
@@ -65,7 +65,5 @@ interface CardDescriptionProps {
 Card.Description = function CardDescription({
   children,
 }: CardDescriptionProps) {
-  return (
-    <p className="relative z-10 mt-2 text-sm text-gray-600 ">{children}</p>
-  );
+  return <p className="relative z-10 mt-2 text-sm">{children}</p>;
 };

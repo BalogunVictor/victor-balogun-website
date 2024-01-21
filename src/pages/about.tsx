@@ -15,7 +15,7 @@ function ToolsSection({ children, title }: any) {
     <section className="md:border-l md:border-zinc-100 md:pl-6 ">
       <div className="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
         <FadeIn>
-          <h2 className="text-sm font-semibold text-zinc-800 ">{title}</h2>
+          <h2 className="text-sm font-semibold">{title}</h2>
         </FadeIn>
         <div className="md:col-span-3">
           <ul className="space-y-16" role="list">
@@ -53,19 +53,21 @@ const About: NextPageWithLayout = () => {
             other individuals in the Dev Community.
           </p>
         </PageIntro>
-        <div className="mt-24 sm:mt-32 lg:mt-40">
-          <div className="space-y-20">
-            {aboutData.map(({ items, title }) => (
-              <ToolsSection key={title} title={title}>
-                {items.map(({ description, subtitle }) => (
-                  <FadeIn key={subtitle}>
-                    <Tool title={subtitle}>{description}</Tool>
-                  </FadeIn>
-                ))}
-              </ToolsSection>
-            ))}
+        <Container>
+          <div className="mt-24 sm:mt-32 lg:mt-40">
+            <div className="space-y-20">
+              {aboutData.map(({ items, title }) => (
+                <ToolsSection key={title} title={title}>
+                  {items.map(({ description, subtitle }) => (
+                    <FadeIn key={subtitle}>
+                      <Tool title={subtitle}>{description}</Tool>
+                    </FadeIn>
+                  ))}
+                </ToolsSection>
+              ))}
+            </div>
           </div>
-        </div>
+        </Container>
       </Container>
     </>
   );

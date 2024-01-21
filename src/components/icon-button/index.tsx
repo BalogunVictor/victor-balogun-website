@@ -14,7 +14,7 @@ const buttonstyle = cva(
         sm: 'p-2',
       },
       variants: {
-        normal: 'text-gray-700 border-gray-200 hover:bg-gray-200',
+        normal: 'text-black border-black/10 hover:bg-gray-200',
       },
     },
   }

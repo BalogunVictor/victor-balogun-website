@@ -7,6 +7,8 @@ import { FadeIn } from '@/components/FadeIn';
 import { PageIntro } from '@/components/PageIntro';
 import { Layout } from '@/layout';
 
+import { NextPageWithLayout } from './_app';
+
 const Portfolio = [
   {
     description: `An e-commerce application.
@@ -24,7 +26,7 @@ const Portfolio = [
   },
 ];
 
-const Works = () => {
+const Works: NextPageWithLayout = () => {
   return (
     <>
       <Head>
@@ -42,15 +44,17 @@ const Works = () => {
               </p>
             </PageIntro>
             <Container className="py-24">
-              {Portfolio.map((portfolio, index) => (
-                <Card
-                  description={portfolio.description}
-                  key={index}
-                  src={portfolio.image}
-                  title={portfolio.title}
-                  url={portfolio.url}
-                />
-              ))}
+              <FadeIn>
+                {Portfolio.map((portfolio, index) => (
+                  <Card
+                    description={portfolio.description}
+                    key={index}
+                    src={portfolio.image}
+                    title={portfolio.title}
+                    url={portfolio.url}
+                  />
+                ))}
+              </FadeIn>
             </Container>
           </Container>
         </FadeIn>

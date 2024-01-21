@@ -7,9 +7,11 @@ import { PageIntro } from '@/components/PageIntro';
 import { PdfPreview } from '@/components/pdf-preview';
 import { Layout } from '@/layout';
 
+import { NextPageWithLayout } from './_app';
+
 const resume_url = process.env.NEXT_PUBLIC_URL + '/VICTOR-BALOGUN-CV.pdf';
 
-const Resume = () => {
+const Resume: NextPageWithLayout = () => {
   return (
     <>
       <Head>

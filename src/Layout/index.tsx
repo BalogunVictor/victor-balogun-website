@@ -2,11 +2,14 @@ import { ReactNode, useEffect, useId, useState } from 'react';
 import { HiBars2, HiXMark } from 'react-icons/hi2';
 import classNames from 'classnames';
 import { motion, MotionConfig, useReducedMotion } from 'framer-motion';
+import Link from 'next/link';
 // import Link from 'next/link';
 import { useRouter } from 'next/router';
 
+import { Footer } from '@/components/Footer';
 // import { socialMediaProfiles } from '@/lib/socialMediaProfiles';
 import Navigation from '@/components/Navigation';
+import { socialProfile } from '@/lib/Social-Profile';
 
 import { Container } from '../components/Container';
 // import { Footer } from './common/Footer';
@@ -84,22 +87,20 @@ export const Layout = ({ children }: LayoutProps) => {
                         Follow me
                       </h2>
 
-                      {/* <ul
+                      <ul
                         className={classNames('mt-6 flex gap-x-10 text-white')}
-                        role="list"
-                      >
-                        {socialMediaProfiles.map((socialMediaProfile) => (
-                          <li key={socialMediaProfile.title}>
+                        role="list">
+                        {socialProfile.map((socialMediaProfile, index) => (
+                          <li key={index}>
                             <Link
-                              aria-label={socialMediaProfile.title}
+                              // aria-label={socialMediaProfile.title}
                               className={classNames('transition')}
-                              href={socialMediaProfile.href}
-                            >
+                              href={socialMediaProfile.link}>
                               <socialMediaProfile.icon className="h-6 w-6 fill-current" />
                             </Link>
                           </li>
                         ))}
-                      </ul> */}
+                      </ul>
                     </div>
                   </div>
                 </Container>
@@ -114,6 +115,7 @@ export const Layout = ({ children }: LayoutProps) => {
           <div className="mx-auto min-h-screen max-w-[2000px] border-l border-r bg-black px-0 pt-14">
             <div className="pt-9">
               <main>{children}</main>
+              <Footer />
             </div>
           </div>
         </motion.div>

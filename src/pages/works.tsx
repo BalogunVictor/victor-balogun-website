@@ -18,8 +18,7 @@ const Portfolio = [
     url: 'https://www.oneflaretechsolutions.com/',
   },
   {
-    description: `An inventory application.
-   keeping track of sales,`,
+    description: `An inventory application, That keeps track of sales,Transaction and Expenses e.t.c`,
     image: '/oneflarePos.png',
     title: 'Oneflare Pos',
     url: 'https://pos.oneflaretech.com/',

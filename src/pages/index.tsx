@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { Button } from '@/components/Button/Button';
 import { Container } from '@/components/Container';
 import { FadeIn } from '@/components/FadeIn';
-import { Layout } from '@/layout';
+import { Layout } from '@/layout/Layout';
 
 import { NextPageWithLayout } from './_app';
 

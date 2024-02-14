@@ -5,7 +5,7 @@ import { Container } from '@/components/Container';
 import { FadeIn } from '@/components/FadeIn';
 import { PageIntro } from '@/components/PageIntro';
 import { PdfPreview } from '@/components/pdf-preview';
-import { Layout } from '@/layout';
+import { Layout } from '@/layout/Layout';
 
 import { NextPageWithLayout } from './_app';
 

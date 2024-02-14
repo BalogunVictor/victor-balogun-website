@@ -5,7 +5,7 @@ import Card from '@/components/card';
 import { Container } from '@/components/Container';
 import { FadeIn } from '@/components/FadeIn';
 import { PageIntro } from '@/components/PageIntro';
-import { Layout } from '@/layout';
+import { Layout } from '@/layout/Layout';
 
 import { NextPageWithLayout } from './_app';
 

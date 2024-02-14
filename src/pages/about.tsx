@@ -1,11 +1,11 @@
-import React, { ReactElement } from 'react';
+import { ReactElement } from 'react';
 import Head from 'next/head';
 
 import { Card } from '@/components/BlogCard';
 import { Container } from '@/components/Container';
 import { FadeIn } from '@/components/FadeIn';
 import { PageIntro } from '@/components/PageIntro';
-import { Layout } from '@/layout';
+import { Layout } from '@/layout/Layout';
 import { aboutData } from '@/lib/about';
 
 import { NextPageWithLayout } from './_app';

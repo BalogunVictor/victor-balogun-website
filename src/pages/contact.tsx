@@ -7,7 +7,7 @@ import { ContactForm } from '@/components/ContactForm';
 import { Container } from '@/components/Container';
 import { FadeIn } from '@/components/FadeIn';
 import { PageIntro } from '@/components/PageIntro';
-import { Layout } from '@/layout';
+import { Layout } from '@/layout/Layout';
 import { socialProfile } from '@/lib/Social-Profile';
 
 import { NextPageWithLayout } from './_app';

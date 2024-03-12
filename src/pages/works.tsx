@@ -11,15 +11,31 @@ import { NextPageWithLayout } from './_app';
 
 const Portfolio = [
   {
-    description: `An e-commerce application.
-   Showcasing Tech Solutions Services rendered, along side products which are available to customers`,
+    description: `This e-commerce application serves as a 
+    comprehensive platform showcasing the array of tech solutions offered by Oneflare Tech Solutions. 
+    It seamlessly integrates services provided with available products, 
+    catering to the diverse needs of our customers.`,
     image: '/oneflareSolution.png',
     title: 'Oneflare Tech Solution',
     url: 'https://www.oneflaretechsolutions.com/',
   },
   {
-    description: `An inventory application, That keeps track of sales,Transaction and Expenses e.t.c`,
+    description: `Our inventory application stands as a sophisticated 
+    system meticulously designed to manage sales, transactions, expenses, and more. 
+    It offers a streamlined approach to inventory management, ensuring efficiency and
+     accuracy in tracking various aspects of business operations.`,
     image: '/oneflarePos.png',
+    title: 'Oneflare Pos',
+    url: 'https://pos.oneflaretech.com/',
+  },
+  {
+    description: `A robust MERN stack application 
+    dedicated to authentication processes. 
+    This personal project encompasses essential authentication features such as protected routes, 
+    password management functionalities like forgot and reset password options, 
+    seamless login and signup processes, all complemented with meticulous error handling for an unparalleled user experience.
+`,
+    image: '/auth.png',
     title: 'Oneflare Pos',
     url: 'https://pos.oneflaretech.com/',
   },

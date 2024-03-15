@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta
-          content="Balogun Moyinoluwa - A skilled software developer based in Lagos, Nigeria with expertise in React, Typescript, Nextjs, Javascript, and Tailwindcss.Check out my portfolio to see my latest projects."
+          content="Victor Balogun - A skilled software developer based in Lagos, Nigeria with expertise in React, Typescript, Nextjs, Javascript, and Tailwindcss.Check out my portfolio to see my latest projects."
           name="description"
         />
         <meta

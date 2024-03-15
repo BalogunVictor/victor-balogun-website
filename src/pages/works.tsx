@@ -36,8 +36,21 @@ const Portfolio = [
     seamless login and signup processes, all complemented with meticulous error handling for an unparalleled user experience.
 `,
     image: '/auth.png',
-    title: 'Oneflare Pos',
-    url: 'https://pos.oneflaretech.com/',
+    title: 'Authentication App',
+    url: 'https://login-app-frontend-peach.vercel.app/',
+  },
+  {
+    description: `This E-commerce application, akin to Shopify, is built using ReactJS and encompasses a comprehensive suite of features:
+
+Seamless registration and login processes, augmented with Google authentication.
+Intuitive navigation facilitating smooth transitions between categories and products.
+Efficient shopping cart management system to enhance user experience.
+Implementation of secure payment gateways for seamless transactions.
+Through the development of this project, I delved deeply into various facets of web application development using React and Redux, gaining valuable insights and honing my skills in crafting robust digital solutions.
+`,
+    image: '/royalClothing.png',
+    title: 'Royal Clothing App',
+    url: 'https://live-royal-clothing.netlify.app/',
   },
 ];
 

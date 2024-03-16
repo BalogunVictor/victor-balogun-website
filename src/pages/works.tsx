@@ -11,19 +11,10 @@ import { NextPageWithLayout } from './_app';
 
 const Portfolio = [
   {
-    description: `This e-commerce application serves as a 
-    comprehensive platform showcasing the array of tech solutions offered by Oneflare Tech Solutions. 
-    It seamlessly integrates services provided with available products, 
-    catering to the diverse needs of our customers.`,
-    image: '/oneflareSolution.png',
-    title: 'Oneflare Tech Solution',
-    url: 'https://www.oneflaretechsolutions.com/',
-  },
-  {
     description: `Our inventory application stands as a sophisticated 
     system meticulously designed to manage sales, transactions, expenses, and more. 
     It offers a streamlined approach to inventory management, ensuring efficiency and
-     accuracy in tracking various aspects of business operations.`,
+    accuracy in tracking various aspects of business operations.`,
     image: '/oneflarePos.png',
     title: 'Oneflare Pos',
     url: 'https://pos.oneflaretech.com/',
@@ -38,6 +29,15 @@ const Portfolio = [
     image: '/auth.png',
     title: 'Authentication App',
     url: 'https://login-app-frontend-peach.vercel.app/',
+  },
+  {
+    description: `This e-commerce application serves as a 
+    comprehensive platform showcasing the array of tech solutions offered by Oneflare Tech Solutions. 
+    It seamlessly integrates services provided with available products, 
+    catering to the diverse needs of our customers.`,
+    image: '/oneflareSolution.png',
+    title: 'Oneflare Tech Solution',
+    url: 'https://www.oneflaretechsolutions.com/',
   },
   {
     description: `This E-commerce application, akin to Shopify, is built using ReactJS and encompasses a comprehensive suite of features:

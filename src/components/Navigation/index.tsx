@@ -45,8 +45,8 @@ const Navigation = ({ onNavigationItemClick }: NavigationProps) => {
       </NavigationRow>
       <hr className="hidden sm:flex sm:h-px sm:bg-white" />
       <NavigationRow>
-        <NavigationItem href="/works" onClick={onNavigationItemClick}>
-          Works
+        <NavigationItem href="/projects" onClick={onNavigationItemClick}>
+          Projects
         </NavigationItem>
         <NavigationItem href="/contact" onClick={onNavigationItemClick}>
           Hire me

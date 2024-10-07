@@ -28,7 +28,6 @@ export function Header({
     onToggle();
   };
 
-  // const HtmlTag: React.FC<HtmlTagProps> = ({ children }) => <>{"<" + children + "/>"}</>
   const Logo = () => (
     <Link aria-label="Home" className="group flex" href="/">
       <h2>{'<'}</h2>

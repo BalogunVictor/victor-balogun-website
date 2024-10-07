@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { landingImage } from '@/assets/images';
 import { Button } from '@/components/Button/Button';
 import { Container } from '@/components/Container';
 import { FadeIn } from '@/components/FadeIn';
@@ -18,33 +19,41 @@ const Home: NextPageWithLayout = () => {
       </Head>
       <main>
         <FadeIn>
-          <Container className="mt-24 sm:mt-40">
-            <Container>
-              <div className="flex flex-col items-center justify-center gap-5 sm:flex-row lg:gap-10">
-                <Image
-                  alt="victorImage"
-                  height={500}
-                  src="/victor-balogun.png"
-                  width={250}
-                />
-                <div className="max-w-5xl">
-                  <h2 className="text-white">
-                    {' '}
-                    I’m a seasoned Software Engineer based in Lagos, Nigeria.
-                  </h2>
-                  <p className="py-6">
-                    {' '}
-                    I’m victor, I am experienced in developing secure and
-                    dynamic applications. I love using my skill set to simplify
-                    work for enterprises and improve the lives of people around
-                    me.
-                  </p>
-                  <Link href="/works">
-                    <Button>Works</Button>
+          <Container>
+            <div className="mx-auto my-8 max-w-6xl">
+              <div className="flex flex-wrap items-center justify-between">
+                <div className="flex min-w-[300px] flex-1 items-center justify-center">
+                  <Image
+                    alt="image"
+                    className="h-[350px] w-[350px] sm:h-[400px] sm:w-[450px]"
+                    height={728}
+                    src={landingImage}
+                    width={603}
+                  />
+                </div>
+                <div className="min-w-[300px] flex-1">
+                  <h1 className="text-4xl">
+                    Software Engineer
+                    <br />
+                    <span className="text-[#97979b]">
+                      based in
+                      <br /> Lagos, Nigeria.
+                    </span>
+                  </h1>
+                  <div className="flex max-w-lg items-center justify-center gap-8 py-4">
+                    <p>
+                      I’m victor, I am experienced in developing secure and
+                      dynamic applications. I love using my skill set to
+                      simplify work for enterprises and improve the lives of
+                      people around me.
+                    </p>
+                  </div>
+                  <Link href="/projects">
+                    <Button>Projects</Button>
                   </Link>
                 </div>
               </div>
-            </Container>
+            </div>
           </Container>
         </FadeIn>
       </main>

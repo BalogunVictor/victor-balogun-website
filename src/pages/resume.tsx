@@ -9,7 +9,7 @@ import { Layout } from '@/layout/Layout';
 
 import { NextPageWithLayout } from './_app';
 
-const resume_url = process.env.NEXT_PUBLIC_URL + '/Victor-balogun.pdf';
+const resume_url = process.env.NEXT_PUBLIC_URL + '/VictorBalogun.pdf';
 
 const Resume: NextPageWithLayout = () => {
   return (
